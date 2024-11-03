@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Roman.Views.RomanNumerals">
+    <ContentPage.Content>
+        <StackLayout Padding="20,20">
+            <Image Source="roman_icon" Margin="0,20" />
+            <Label x:Name="txtNumbers" Text="Roman Numeral" HorizontalTextAlignment="Center" FontSize="Title" FontAttributes="Bold" Margin="0,20,0,60"/>
+            <Border Stroke="gray" StrokeThickness="1">
+                <Entry x:Name="txtRoman" Placeholder="Enter Roman Numerals To Convert To Number" Keyboard="Numeric"/>
+            </Border>
+            <Button Text="Convert" Margin="0,20,0,20" Clicked="ConvertRomanNumeral"/>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Roman.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Roman.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar x:Name="tbBar">
+        <Tab Title="123" >
+            <ShellContent ContentTemplate="{DataTemplate local:Numbers}" Route="Numbers" />
+        </Tab>
+        <Tab Title="I V X" >
+            <ShellContent ContentTemplate="{DataTemplate local:RomanNumerals}" Route="RomanNumerals" />
+        </Tab>
+    </TabBar>
+
+</Shell>
